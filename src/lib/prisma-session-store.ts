@@ -380,8 +380,7 @@ export class PrismaSessionStore<M extends string = 'session'> extends Store {
     const data = {
       sid,
       expiresAt,
-      data: sessionString,
-      id: this.dbRecordIdIsSessionId ? sid : this.dbRecordIdFunction(sid),
+      data: sessionString
     };
 
     if (existingSession !== null) {

@@ -1,7 +1,6 @@
 export interface IPrismaSession {
   data: string | null;
   expiresAt: Date;
-  id: string;
   sid: string;
 }
 
